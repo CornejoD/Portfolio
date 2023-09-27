@@ -15,14 +15,15 @@ header
     padding: 20px;
     background-color: lightblue;
     display: flex;
-    
+    justify-content: space-between;
+    background: gray;
     
 }
 
 h1 
 {
     font-size: 3rem;
-
+    background-color: lightpink;
     color: gold;
 }
 
@@ -32,14 +33,17 @@ nav
     background-color: gray;
     display: flex;
     justify-content: end;
-    display: inline;
 }
 
-header nav
+header nav ul li 
 {
-    
+    margin: 5px;
 }
 
+header nav ul li a 
+{
+    color: aquamarine;
+}
 main
 {
     background-color: aliceblue;
@@ -49,6 +53,16 @@ main
 ul
 {
     list-style-type: none;
+    display: flex;
+    align-items: end;
+    font-size: x-large;
+    margin: 0;
+}
+
+.divImage img
+{
+    width: 100%;
+    height: 233px;
 }
 
 .boxes
