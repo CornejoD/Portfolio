@@ -1,6 +1,8 @@
 :root
 {
     --backGround: #fff;
+    --navcolor: #30cfce;
+    --navBack: #c8e2af;
 }
 
 body
@@ -13,24 +15,26 @@ body
 header
 {
     padding: 20px;
-    background-color: lightblue;
+    background-color: var(--navBack);
     display: flex;
     justify-content: space-between;
-    background: gray;
+    
     
 }
 
 h1 
 {
     font-size: 3rem;
-    background-color: lightpink;
-    color: gold;
+    background-color: var(--navcolor);
+    color: var(--navBack);
+    padding: 15px;
+    padding-left: 100px;
 }
 
 nav
 {
     
-    background-color: gray;
+    background-color: var(--navBack);
     display: flex;
     justify-content: end;
 }
@@ -42,11 +46,11 @@ header nav ul li
 
 header nav ul li a 
 {
-    color: aquamarine;
+    color: var(--navcolor);
 }
 main
 {
-    background-color: aliceblue;
+    background-color: var(--backGround);
     
 }
 
@@ -63,14 +67,18 @@ ul
 {
     width: 100%;
     height: 233px;
+    margin: 2px;
+    /* border-style: solid;
+    border-color: var(--navcolor);
+    border-width: 2px; */
 }
 
 .boxes
 {
     padding:75px; 
-    border-style: solid;
+    /* border-style: solid; */
     /* border-right: 1px; */
-    border-color: black;
+    /* border-color: black; */
     display: flex;
     align-items: center;
     
@@ -86,7 +94,83 @@ ul
     border-top: hidden;
     border-bottom: hidden;
     border-right: hidden;
+    border-color: darkblue;
     width: 100%;
     height: auto;
 }
 
+.imagesBorder
+{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    border-style: solid;
+    border-color: var(--navcolor);
+    border-width: 5px;
+}
+
+.bigImageBorder
+{
+    width: 1055px;
+    height: 400px;
+    margin: 20px;
+    border-style: solid;
+    border-color: var(--navcolor);
+    border-width: 5px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .bigImageBorder
+    {
+        width: 500px;
+        height: 300px;
+    }   
+
+    ul
+    {
+        font-size: medium;
+    }
+
+    h1 
+    {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .bigImageBorder
+    {
+        width: 200px;
+        height: fit-content;
+    }
+
+    .imagesBorder
+    {
+        width: 200px;
+        height: fit-content;
+    }
+
+    .divImage img
+    {
+        height: fit-content;
+    }
+
+    ul
+    {
+        font-size: small;
+    }
+
+    h1 
+    {
+        font-size: medium;
+        width: 150px;
+        padding-left: 20px;
+    }
+
+    .divImage img 
+    {
+        height: 75px;
+    }
+}
