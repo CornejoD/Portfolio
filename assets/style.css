@@ -1,8 +1,8 @@
 :root
 {
     --backGround: #fff;
-    --navcolor: #30cfce;
-    --navBack: #c8e2af;
+    --navcolor: #D775F1;
+    --navBack: #75F1D7;
 }
 
 body
@@ -63,14 +63,30 @@ ul
     margin: 0;
 }
 
-.divImage img
+.divImage 
 {
     width: 100%;
     height: 233px;
     margin: 2px;
-    /* border-style: solid;
-    border-color: var(--navcolor);
-    border-width: 2px; */
+    margin-top: 0px;
+    background-image: linear-gradient(to bottom right, var(--navcolor), var(--navBack));
+}
+
+.imagep
+{
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    font-size: 25px;
+    color: var(--navcolor);
+}
+
+.worktext
+{
+    position: relative;
+    float: right
+    ;
+    color: var(--navcolor);
 }
 
 .boxes
@@ -107,6 +123,7 @@ ul
     border-style: solid;
     border-color: var(--navcolor);
     border-width: 5px;
+    /* position: relative; */
 }
 
 .bigImageBorder
@@ -117,6 +134,7 @@ ul
     border-style: solid;
     border-color: var(--navcolor);
     border-width: 5px;
+    /* position: relative; */
 }
 
 @media screen and (max-width: 1200px)
